@@ -1469,8 +1469,8 @@ blockquote:last-child {
   display: -ms-inline-flexbox;
   display: inline-flex;
   /*width: 29px;*/
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   /*height: 29px;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
