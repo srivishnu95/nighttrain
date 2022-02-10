@@ -1098,7 +1098,8 @@ blockquote:last-child {
       padding: 6.4rem calc(13vh + 4rem) 6.4rem 3.9rem; } }
 @media (max-width: 767px), screen and (max-width: 812px) and (orientation: landscape) {
     .header {
-      border-bottom: 0; } }
+      border-bottom: 0;
+     } }
 .header:before {
     content: '';
     height: .1rem;
@@ -1115,7 +1116,8 @@ blockquote:last-child {
     content: '';
     width: 75px;
     height: 75px;
-    background-color: #E50019;
+    /*background-color: #E50019;*/
+    background-color: black;
     position: absolute;
     top: 0;
     right: 0;
@@ -1467,8 +1469,8 @@ blockquote:last-child {
   display: -ms-inline-flexbox;
   display: inline-flex;
   /*width: 29px;*/
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
   /*height: 29px;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1808,7 +1810,8 @@ blockquote:last-child {
 @media (max-width: 767px), screen and (max-width: 812px) and (orientation: landscape) {
       .nav ul {
         display: block;
-        background-color: #E50019;
+        /*background-color: #E50019;*/
+        background-color: black;
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none;
@@ -1817,7 +1820,8 @@ blockquote:last-child {
 @media (orientation: landscape) and (max-width: 850px) {
       .nav ul {
         display: block;
-        background-color: #E50019;
+        /*background-color: #E50019;*/
+        background-color: black;
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none;
