@@ -1,85 +1,618 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NIGHT TRAIN</title>
-    <style type="text/css">
-            
-            @import url(https://fonts.googleapis.com/css?family=Roboto);
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            body{
-                font-family: 'Roboto';
-                text-align: center;
-                overflow: hidden;
-                margin: 15;
-                padding: 0;
-            }
-            #main{
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: row;
-                        flex-direction: row;
-                -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;                
-            }
+	<title>Night Train</title>
 
-            #hello{
-                float: left;
-                position: relative;
-        top: 10em;
-            }
-            h2{
-                position: absolute;
-                margin: 0;
-                padding: 0;
-                left: 0;
-                right: 0;
-                top: 48%;
-                float: left;
-                letter-spacing: 0.3em;
-            }
+	<meta name="title" content="Night Train">
+	<meta name="description" content="Night Train is your one stop badminton centre, providing everything from facilities, training academy, tournament event management and sports travel. We aspire to provide all resources to help any shuttlers regardless of their level of expertise. Our vision is to bring communities together to share their love of badminton.">
 
-            h1{
-                margin: 0;
-                padding: 0;
-                float: left;
-                letter-spacing: 0.3em;
-                position: relative;
-            }
-            @-webkit-keyframes animate-con {
-                0%{opacity:0;}
-                33.3%{opacity: 0;}
-                100%{margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;}
-              }
-            
-             #con
-            {
-                -webkit-animation-name:             animate-con;
-                -webkit-animation-duration:         2s; 
-                -webkit-animation-iteration-count:  1;
-                -webkit-animation-timing-function: ease-out;
-                }
-        
-    </style>
+	<meta property="og:title" content="Night Train">
+	<meta property="og:description" content="Night Train is your one stop badminton centre, providing everything from facilities, training academy, tournament event management and sports travel. We aspire to provide all resources to help any shuttlers regardless of their level of expertise. Our vision is to bring communities together to share their love of badminton.">
+	<meta property="og:image" content="assets/images/og-image.png">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
-    <div id="main">
-    <h2 id="con">THIS WEBSITE IS UNDER CONSTRUCTION</h2>
-    </div>
+	<div class="page-loading view1 ">
+		<a href="#" class="header__logo loading_logo">
+			<img src="assets/images/svg/logo.svg" class="flipper" >
+		</a>
+	</div>
+
+	<div class="wrapper">
+		<header class="header">
+	<a href="#" class="header__logo logo">
+		<img src="assets/images/svg/logo.svg" >
+	</a>
+
+	<div class="header__actions hidden-md hidden-lg js-toggle">
+		<span aria-label="Open Mobile nav" class="nav-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+
+		<p class="current">Intro</p><!-- /.current -->
+	</div><!-- /.header__actions -->
+
+	<nav class="nav">
+		<ul>
+			<li data-target="#intro" class="hidden">
+				<a href="#">Intro</a>
+			</li>
+
+			<li data-target="#about">
+				<a href="#">About</a>
+			</li>
+
+			<li data-target="#notion">
+				<a href="#">Notion</a>
+			</li>
+
+			<li data-target="#booking">
+				<a href="#">Booking</a>
+			</li>
+
+			<li data-target="#vision">
+				<a href="#">Vision</a>
+			</li>
+
+			<li data-target="#events">
+				<a href="#">Events</a>
+			</li>
+
+			<li data-target="#flooring">
+				<a href="#">Flooring</a>
+			</li>
+
+			<li data-target="#contact">
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+
+		<a href="#" class="nav__close close-nav">Close Nav</a>
+	</nav><!-- /.nav -->
+</header><!-- /.header -->
+
+		<!-- <div class="message" data-aos="fade-left">
+			<p>This site uses cookies for the needs of Google Analytics. By proceeding, you agree to the terms of use.</p>
+
+			<a href="#" class="btn btn--alt js-message">OK, GOT IT!</a>
+		</div> --><!-- /.message -->
+
+		<section id="intro" class="scrollspy">
+			<div class="hero">
+				<div class="shell hero__shell">
+					<div class="hero__inner">
+						<h1 class="hero__title">Hello!</h1>
+						
+						<div class="hero__image">
+							<h3 class="hero__text"> We are<br>
+							Night Train</h3>
+							<span class="line">
+						</span></div><!-- /.hero__image -->
+
+						<h2 class="h4 hero__subtitle"> your one stop badminton centre.</h2>
+					</div><!-- /.hero__inner -->
+				</div><!-- /.shell -->
+			</div><!-- /.hero -->
+
+			<section class="section js-position-align">
+				<div class="shell">
+					<div class="section__inner">
+						<img src="assets/images/temp/img1.jpg" >
+
+						<div class="section__entry">
+							<h2 class="h4">Night Train is your <span>one stop badminton centre</span>, providing everything from facilities, training academy, tournament event management and sports travel.</h2><!-- /.h4 -->
+						</div><!-- /.section__entry -->
+
+						<div class="section__images js-right-align js-right-align-alt">
+							<div class="section__image section__image--size1">
+								<img src="assets/images/temp/img3.jpg" >
+							</div><!-- /.section__image -->
+
+							<div class="section__image section__image--size2">
+								<img src="assets/images/temp/img4.jpg" >
+							</div><!-- /.section__image -->
+						</div><!-- /.section__images -->
+					</div><!-- /.section__inner -->
+				</div><!-- /.shell -->
+			</section><!-- /.section -->
+		</section><!-- /#intro -->
+
+		<section id="about" class="scrollspy">	
+			<section class="section section--nospace">
+				<div class="shell">
+					<div class="section__inner">
+						<div class="section__entry section__entry--center section__entry--size1">
+							<h2 class="h4">We aspire to provide all resources to help any shuttlers regardless of their level of expertise.</h2><!-- /.h4 -->
+						</div><!-- /.section__entry section__sntry-/-size2 -->
+					</div><!-- /.section__inner -->
+				</div><!-- /.shell -->
+			</section><!-- /.section -->
+
+			<div class="articles">
+				<div class="shell">
+					<div class="article">
+						<div class="grid">
+							<div class="grid__col grid__col--1of2">
+								<figure class="article__image">
+									<span class="line"></span><!-- /.line -->
+									
+									<i class="ico-shuttle ico--2">
+										<img src="assets/images/temp/img1@2x.png" >
+									</i>
+								</figure><!-- /.article__image -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+							
+							<div class="grid__col grid__col--1of2">
+								<div class="article__content">
+									<h2 class="h4">
+										Creating champions at our academy
+									</h2><!-- /.h4 -->
+
+									<p>Our generalist training is suitable for all badminton enthusiasts to earn, brushing up on skills and techniques under the guidance of our NIS certified coaches. We also offer private, custome tailored training which is perfect for students with irregular schedules or people requiring a more customized coaching regime.</p>
+								</div><!-- /.article__content -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+						</div><!-- /.grid -->
+					</div><!-- /.article -->
+
+					<div class="article article--reversed">
+						<div class="grid">
+							<div class="grid__col grid__col--1of2">
+								<a href="" target="_blank">
+									<figure class="article__image">
+										<span class="line"></span><!-- /.line -->
+										
+										<i class="ico-shuttle">
+											<img src="assets/images/temp/img@2x.jpg" >
+										</i>
+									</figure><!-- /.article__image -->
+								</a>
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+							
+							<div class="grid__col grid__col--1of2">
+								<div class="article__content">
+									<h2 class="h4">
+										Training
+									</h2><!-- /.h4 -->
+
+									<p>Night Train helps you provide a helping hand in executing winning strategies in the court. Be it on the work on your footwork, conditional training, strategie during rallies, practicing different shots, get the best guidance from our world-class team of coaches.</p>
+
+								</div><!-- /.article__content -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+						</div><!-- /.grid -->
+					</div><!-- /.article -->
+
+					<div class="article article--alt">
+						<div class="grid">
+							<div class="grid__col grid__col--1of2">
+								<figure class="article__image">
+									<span class="line"></span><!-- /.line -->
+									
+									<i class="ico-shuttle">
+										<img src="assets/images/temp/img2@2x.jpg" >
+									</i>
+								</figure><!-- /.article__image -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+							
+							<div class="grid__col grid__col--1of2">
+								<div class="article__content">
+									<h2 class="h4">
+										Channel the energy
+									</h2><!-- /.h4 -->
+
+									<p>By introducing competitive leagues and tournaments that are open to players of all ages and levels, we create opportunities to compete and raise everyone’s game. Competitions are crucial in shaping a player's overall development. Our coaches encourage students to participate in various competitions and help them
+distinguish between effort and ability. Playing against other students,
+their experience will be widened and ability to handle different types of players and different strategies.</p>
+									
+									<p> <b>Recommended Session Per Week: </b></p>
+									<ul class="stats">
+										<li>
+											<h2 class="h5">a min. 1-2 times</h2><!-- /.h5 -->	
+
+											<p>Beginner</p>
+										</li>
+
+										<li>
+											<h2 class="h5">a min. 2-3 times</h2>
+											
+											<p>Intermediate</p>
+										</li>
+										
+										<li>
+											<h2 class="h5"> a min. 3-4 times</h2>
+											
+											<p>Advanced</p>
+										</li>
+
+										<li>
+											<h2 class="h5"> a min. 4-5 times</h2>
+											
+											<p>Elite</p>
+										</li>
+									</ul><!-- /.stats -->
+									<br>
+									<ul><li>
+							We are happy to make up your lesson, in case you are sick and cannot
+attend lessons, as long as we get 24 hours notice via WhatsApp or Email.</li><br>
+<li>We recommend wearing the t-shirt to lessons to feel as part of the team. We also highly recommend that you wear proper sports shorts / track bottoms and badminton shoes as well as sports socks to minimize any case of injury.
+</li><br>
+	<li> Our commitment is to ensure that there are minimal interruptions to the classes. You may thus find different coaches teaching your ward at the same level. So when any of our coaches fall sick or have to be away on personal issues or family emergencies, we make such arrangements</li>
+</li></ul>
+								</div><!-- /.article__content -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+						</div><!-- /.grid -->
+					</div><!-- /.article -->
+
+					<div class="article article--reversed">
+						<div class="grid">
+							<div class="grid__col grid__col--1of2">
+								<figure class="article__image">
+									<span class="line"></span><!-- /.line -->
+									
+									<i class="ico-shuttle">
+										<img src="assets/images/temp/img3@2x.jpg" >
+									</i>
+								</figure><!-- /.article__image -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+							
+							<div class="grid__col grid__col--1of2">
+								<div class="article__content">
+									<br>
+									<h2 class="h4">
+										Leveling up the juniors
+									</h2><!-- /.h4 -->
+
+									<p>We start children as young as at the age of 6 onwards.<br>
+The best way to take the sport to the next level is to make sure that our juniors can level up faster. To a point where they don’t just master the sport - they innovate the sport. While practice makes perfect, there’s only so much you can do if you don’t know exactly what it is you should be practicing. Through Legends’ Vision, we are developing new ways of giving juniors access to better learning tools.</p>
+								<ul><li>
+								<p>Coaching lessons are irrespective of public holidays. Students will receive a notification via their registered email and/or mobile on holiday dates.</p></li>
+								<br>
+								<li><p> It is guaranteed that you will play better badminton if you continue to take the instructional tips with you and continue on the right path of practicing the correct techniques that you were taught. Consistency, patience, willingness to learn and effort are the keys to improving your game.</p></li></ul>
+								</div><!-- /.article__content -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+						</div><!-- /.grid -->
+					</div><!-- /.article -->
+
+					<div class="article">
+						<div class="grid">
+							<div class="grid__col grid__col--1of2">
+								<figure class="article__image">
+									<span class="line"></span><!-- /.line -->
+									
+									<i class="ico-shuttle">
+										<img src="assets/images/temp/img4@2x.jpg" >
+									</i>
+								</figure><!-- /.article__image -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+							
+							<div class="grid__col grid__col--1of2">
+								<div class="article__content">
+									<br>
+									<h2 class="h4">
+										Surfacing the undercurrent
+									</h2><!-- /.h4 -->
+
+									<p>With each level upgrade, the training module will be more intensified and with a higher level coach therefore it is recommended that you commit the min. number session to show significant progress.</p>
+								</div><!-- /.article__content -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+						</div><!-- /.grid -->
+					</div><!-- /.article -->
+				</div><!-- /.shell -->
+			</div><!-- /.articles -->
+		</section><!-- /#about -->
+
+		<section id="notion" class="section-alt section-alt-def scrollspy">
+			<div class="shell">
+				<div class="section__inner">
+					<div class="section__head">
+						<h2>Our Notion</h2>
+
+						<div class="section__subtitles">
+							<h2 class="h3" data-aos="fade-left" data-aos-delay="0">Learn.</h2><!-- /.h3 -->
+							
+							<h2 class="h3" data-aos="fade-left" data-aos-delay="300">Improve.</h2><!-- /.h3 -->
+							
+							<h2 class="h3" data-aos="fade-left" data-aos-delay="600">Repeat.</h2><!-- /.h3 -->
+						</div><!-- /.section__subtitles -->
+					</div><!-- /.section__head -->
+				</div>
+			</div>
+		</section>
+		<section id="booking" class="section-alt scrollspy">
+			<div class="shell">
+				<div class="section__inner">
+					<div class="court-booking" class="section__head">
+						<h2>Court Booking</h2>
+					</div>
+					<div class="section__body">
+						<div class="grid section__grid">
+							<div class="grid__col grid__col--1of2">
+								<img src="assets/images/temp/img5.jpg" >
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+							
+							<div class="grid__col grid__col--1of2">
+								<div class="section__entry">
+									<h2 class="h4">You may <span>Walk In and make a booking</span>. For convenience, you may book online using court booking apps like <span>Playo</span>.
+								</div><!-- /.section__entry -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+						</div><!-- /.grid -->
+						<h2 class="h4"> For frequent players, we offer <span>seasonal booking</span>. Please contact us for registration and/or offers.</h2><!-- /.h4 -->
+
+					</div><!-- /.section__body -->
+				</div><!-- /.section__inner -->
+			</div><!-- /.shell -->
+		</section><!-- /.section -->
+
+		<section class="section-dev scrollspy">
+			<div class="section__image" style="background-image: url(assets/images/temp/section-bg.jpg);"></div><!-- /.section__image -->
+		</section><!-- /.section-dev -->
+
+		<section id="vision" class="section-alt section-alt--def scrollspy">
+			<div class="shell">
+				<div class="section__inner">
+					<div class="court-booking" class="section__head section__head--alt">
+						<h2>Be Part of the vision</h2>
+					</div><!-- /.section__head -->
+					
+					<div class="section__body section__body--alt">
+						<h2 class="h4" style="margin-bottom: 5% !important;">Our vision is to bring communities together to share their love of badminton.</h2><!-- /.h4 -->
+
+						<div class="grid section__grid section__grid--alt">
+							<div class="grid__col grid__col--1of2">
+								<img src="assets/images/temp/img6.jpg" >
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+							
+							<div class="grid__col grid__col--1of2">
+								<div class="section__entry">
+									<p>
+We’re only scratching the surface of how we can accelerate the growth of our junior talents. There’s so much we can all do together. <br>
+So let’s join hands in growing the sport. If you have an idea or initiative to introduce new people or connect to new audiences to badminton,<br> let us know!</p>
+								</div><!-- /.section__entry -->
+							</div><!-- /.grid__col grid__col-/-1of2 -->
+						</div><!-- /.grid -->
+					</div><!-- /.section__body -->
+				</div><!-- /.section__inner -->
+			</div><!-- /.shell -->
+		</section><!-- /.section -->
+
+		<section id="events" class="section-alt section-alt--dev scrollspy">
+			<div class="shell">
+				<div class="section__inner">
+					<div class="section__head">
+						<h2>Nationwide events</h2>
+					</div><!-- /.section__head -->
+					
+					<div class="section__body">
+						<div class="grid grid--type1 section__grid section__grid--alt">
+							<div class="grid__col grid__col--2of3">
+								<div class="members" data-aos="fade-up">
+									<div class="member is-active">
+										<img src="assets/images/ne/ne-00001.png" class="visible" >
+
+										<img src="assets/images/ne/ne-000016.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active" data-aos="fade-up">
+										<img src="assets/images/ne/ne-00002.png" class="visible" >
+
+										<img src="assets/images/ne/ne-000015.png" >
+									</div><!-- /.member -->
+
+									<div class="member">
+										<img src="assets/images/ne/ne-00003.png" class="visible" >
+
+										<img src="assets/images/ne/ne-000014.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active" data-aos="fade-up">
+										<img src="assets/images/ne/ne-00004.png" class="visible" >
+
+										<img src="assets/images/ne/ne-000013.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active">
+										<img src="assets/images/ne/ne-00005.png" class="visible" >
+
+										<img src="assets/images/ne/ne-000012.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active member--red" data-aos="fade-up">
+										<img src="assets/images/ne/ne-00006.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-000011.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active member--red" data-aos="fade-up">
+										<img src="assets/images/ne/ne-00007.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-000010.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active">
+										<img src="assets/images/ne/ne-00008.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-00009.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active member--red">
+										<img src="assets/images/ne/ne-000016.png" >
+										<img src="assets/images/ne/ne-00001.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member">
+										<img src="assets/images/ne/ne-000015.png" >
+										<img src="assets/images/ne/ne-00002.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member is-active" data-aos="fade-up">
+										<img src="assets/images/ne/ne-000014.png" >
+										<img src="assets/images/ne/ne-00003.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member">
+										<img src="assets/images/ne/ne-000013.png" >
+										<img src="assets/images/ne/ne-00004.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member is-active">
+										<img src="assets/images/ne/ne-000012.png" >
+										<img src="assets/images/ne/ne-00005.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member">
+										<img src="assets/images/ne/ne-000011.png" >
+										<img src="assets/images/ne/ne-00006.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member is-active" data-aos="fade-up">
+										<img src="assets/images/ne/ne-000010.png" >
+										<img src="assets/images/ne/ne-00007.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member is-active">
+										<img src="assets/images/ne/ne-00009.png" >
+										<img src="assets/images/ne/ne-00008.png" class="visible" >
+										
+									</div><!-- /.member -->
+
+									<div class="member member--reset is-active">
+										<!-- <a href="javascript:;" class="ne__btn js-reset">
+											<i class="ico-refresh">
+												<img src="assets/images/svg/ico-refresh.svg" >
+											</i>
+										</a> -->
+									</div><!-- /.member -->
+
+									<div class="member">
+										<img src="assets/images/ne/ne-00001.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-000016.png" >
+									</div><!-- /.member -->
+
+									<div class="member member--reset is-active">
+										<!-- <a href="javascript:;" class="ne__btn js-reset">
+											<i class="ico-refresh">
+												<img src="assets/images/svg/ico-refresh.svg" >
+											</i>
+										</a> -->
+									</div><!-- /.member -->
+
+									<div class="member">
+										<img src="assets/images/ne/ne-00002.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-000015.png" >
+									</div><!-- /.member -->
+									
+									<div class="member is-active" data-aos="fade-up">
+										<img src="assets/images/ne/ne-00003.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-000014.png" >
+									</div><!-- /.member -->
+
+									<div class="member">
+										<img src="assets/images/ne/ne-00004.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-000013.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active member--red" data-aos="fade-up">
+										<img src="assets/images/ne/ne-00005.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-000012.png" >
+									</div><!-- /.member -->
+
+									<div class="member is-active" data-aos="fade-up">
+										<img src="assets/images/ne/ne-00006.png" class="visible" >
+										
+										<img src="assets/images/ne/ne-00001.png" >
+									</div><!-- /.ne -->
+								</div><!-- /.members -->
+							</div><!-- /.grid__col grid__col-/-2of3 -->
+							
+							<div class="grid__col grid__col--1of3">
+								<div class="section__entry">
+									<h2 class="h4">We are expanding our facilities and services in <span>South India.</span></h2><!-- /.h4 -->
+
+									<p>Thousands of people
+have come through our courts since we begun and we've attracted world-class players and students from all over India.</p>
+								</div><!-- /.section__entry -->
+							</div><!-- /.grid__col grid__col-/-1of3 -->
+						</div><!-- /.grid -->
+					</div><!-- /.section__body -->
+				</div><!-- /.section__inner -->
+			</div><!-- /.shell -->
+		</section><!-- /.section -->
+
+		<section id="flooring" class="section-dev section-dev--alt scrollspy" style="background-image: url(assets/images/temp/section-bg2.png); background-size: cover;">
+			<div class="shell">
+				<h2>Flooring</h2>
+
+				<div class="section__grid grid">
+					<div class="grid__col grid__col--1of2">
+						<h2 class="h4">All our badminton courts are synthetic with wooden flooring which makes it possible to distribute stress evenly, making performance efficient for players.</h2>
+						<!-- /.h4 -->
+						<br>
+					<p>It safeguards the interest of badminton players by giving good grip and prevention from injuries, which can be caused by playing on conventional floors. It provides a buffer to the players by reducing the impact if players fall, thus reducing injuries.</p>
+					</div><!-- /.grid__col grid__col-/-1of2 -->
+		
+				</div><!-- /.section__grid grid -->
+
+			</div><!-- /.shell -->
+		</section><!-- /.section-dev -->
+
+		<footer class="footer" data-aos="fade-up" data-aos-duration="2000" id="contact">
+	<div class="shell">
+		<h2 data-aos="fade-up" data-aos-duration="2000">Contact us</h2>
+
+		<div class="grid footer__grid">
+			<div class="grid__col grid__col--1of2">
+				<div class="footer__content" data-aos="fade-up" data-aos-duration="2000">
+					<h3 class="h4">Office</h3><!-- /.h4 -->
+					<address>Plot 321 & 322, Road #5,<br> Vaidehinagar, Hyderabad - 500070 <br> Telangana <br><a href="mailto:support@nighttrain.in">support@nighttrain.in</a></address>
+				</div><!-- /.footer__content -->	
+			</div><!-- /.grid__col grid__col-/-1of2 -->
+		</div><!-- /.grid -->
+
+		<div class="footer__copyrights" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+		
+			<p>&copy; nighttrain.in 2022</p>
+		</div><!-- /.copyrights -->
+	</div><!-- /.shell -->
+</footer><!-- /.footer -->
+	</div><!-- /.wrapper -->
+
+	<script src="assets/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bundle.js"></script>
+
 </body>
 </html>
