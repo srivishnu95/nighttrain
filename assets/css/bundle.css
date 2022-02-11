@@ -1160,6 +1160,11 @@ blockquote:last-child {
             transform: translate(0, -50%) rotate(90deg);
     /*  Mobile  */ }
 @media (max-width: 767px), screen and (max-width: 812px) and (orientation: landscape) {
+      .header__logo {
+        width: 50px;
+        height:               n50px;
+      }
+
       .header .header__logo {
         position: fixed;
         top: 15px;
@@ -1469,8 +1474,8 @@ blockquote:last-child {
   display: -ms-inline-flexbox;
   display: inline-flex;
   /*width: 29px;*/
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   /*height: 29px;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
